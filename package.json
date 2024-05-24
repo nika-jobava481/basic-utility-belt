@@ -34,9 +34,10 @@
     "math",
     "date manipulation",
     "calendar",
-    "arithmetic"
+    "arithmetic",
+    "string manipulation"
   ],
-  "author": "NIka Jobava",
+  "author": "Nika Jobava",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nika-jobava481/basic-utility-belt/issues"
