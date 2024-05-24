@@ -8,8 +8,9 @@ Basic Utility Belt is a versatile collection of essential utility functions desi
 - [Installation](#installation)
 - [Features](#features)
 - [Docs](#docs)
-  - [numbers.js](#numbersjs)
-  - [dates.js](#datesjs)
+  - [numbers](#numbers)
+  - [dates](#dates)
+  - [strings](#strings)
 - [License](#license)
 
 ## Installation
@@ -33,7 +34,7 @@ npm install basic-utility-belt
   - [numbers.js](#numbersjs)
   - [dates.js](#datesjs)
 
-### numbers.js
+### numbers
 
 - [getRandomNumber](#getrandomnumbermin-max)
 - [clamp](#clampnum-min-max)
@@ -122,7 +123,7 @@ Calculate the least common multiple of multiple numbers.
 
 
 
-### dates.js
+### dates
 
 - [getCalendarDays](#getcalendardaysstartdate-enddate)
 - [getWorkingDays](#getworkingdaysstartdate-enddate)
@@ -176,6 +177,42 @@ Check if a year is a leap year.
 
 - `year`: The year to check.
 - Returns: `true` if the year is a leap year, `false` otherwise.
+
+### strings
+
+- [capitalize](#capitalizestr)
+- [camelCase](#camelcasestr)
+- [reverseString](#reversestringstr)
+- [escapeHTML](#escapehtmlstr)
+
+#### capitalize(str)
+
+Capitalize the first letter of a string.
+
+- `str`: The input string.
+- Returns: The string with the first letter capitalized.
+
+#### camelCase(str)
+
+Convert a string to camel case.
+
+- `str`: The input string.
+- Returns: The string in camel case.
+
+#### reverseString(str)
+
+Reverse a given string.
+
+- `str`: The input string.
+- Returns: The reversed string.
+
+#### escapeHTML(str)
+
+Escape HTML special characters in a string.
+
+- `str`: The input string.
+- Returns: The string with HTML special characters escaped.
+
 
 
 ## License
