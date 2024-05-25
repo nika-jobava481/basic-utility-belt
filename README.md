@@ -222,7 +222,7 @@ Escape HTML special characters in a string.
 - [shuffleArray](#shufflearrayarray)
 - [uniqueArray](#uniquearrayarray)
 - [flattenArray](#flattenarrayarray)
-- [chunkArray](#chunkarraysize)
+- [chunkArray](#chunkarrayarray-size)
 
 #### shuffleArray(array)
 
