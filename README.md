@@ -11,6 +11,7 @@ Basic Utility Belt is a versatile collection of essential utility functions desi
   - [numbers](#numbers)
   - [dates](#dates)
   - [strings](#strings)
+  - [arrays](#arrays)
 - [License](#license)
 
 ## Installation
@@ -33,6 +34,8 @@ npm install basic-utility-belt
 
   - [numbers.js](#numbersjs)
   - [dates.js](#datesjs)
+  - [strings](#strings)
+  - [arrays](#arrays)
 
 ### numbers
 
@@ -212,6 +215,44 @@ Escape HTML special characters in a string.
 
 - `str`: The input string.
 - Returns: The string with HTML special characters escaped.
+
+
+### arrays.js
+
+- [shuffleArray](#shufflearray)
+- [uniqueArray](#uniquearray)
+- [flattenArray](#flattenarray)
+- [chunkArray](#chunkarray-size)
+
+#### shuffleArray(array)
+
+Randomly shuffle the elements of an array.
+
+- `array`: The array to shuffle.
+- Returns: The shuffled array.
+
+#### uniqueArray(array)
+
+Remove duplicates from an array.
+
+- `array`: The array to remove duplicates from.
+- Returns: The array with duplicates removed.
+
+#### flattenArray(array)
+
+Flatten a nested array.
+
+- `array`: The nested array to flatten.
+- Returns: The flattened array.
+
+#### chunkArray(array, size)
+
+Split an array into chunks of a specified size.
+
+- `array`: The array to chunk.
+- `size`: The size of each chunk.
+- Returns: An array containing the chunked arrays.
+
 
 
 
