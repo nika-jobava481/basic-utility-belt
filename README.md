@@ -32,8 +32,8 @@ npm install basic-utility-belt
 
 ## Docs
 
-  - [numbers.js](#numbers)
-  - [dates.js](#dates)
+  - [numbers](#numbers)
+  - [dates](#dates)
   - [strings](#strings)
   - [arrays](#arrays)
 
