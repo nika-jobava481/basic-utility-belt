@@ -12,6 +12,7 @@ Basic Utility Belt is a versatile collection of essential utility functions desi
   - [dates](#dates)
   - [strings](#strings)
   - [arrays](#arrays)
+  - [regexs](#regexs)
 - [License](#license)
 
 ## Installation
@@ -35,6 +36,7 @@ npm install basic-utility-belt
   - [dates](#dates)
   - [strings](#strings)
   - [arrays](#arrays)
+  - [regexs](#regexs)
 
 ### numbers
 
@@ -251,6 +253,61 @@ Split an array into chunks of a specified size.
 - `array`: The array to chunk.
 - `size`: The size of each chunk.
 - Returns: An array containing the chunked arrays.
+
+
+
+
+### regexs
+
+- [validateEmail](#validateemailemail)
+- [validateURL](#validateurlurl)
+- [validateCreditCard](#validatecreditcardcardnumber)
+- [validateIPv4](#validateipv4ipv4Address)
+- [validateIPv6](#validateipv6ipv6Address)
+- [validateDate](#validatedatedateString)
+
+#### validateEmail(email)
+
+Validate an email address format.
+
+- `email`: The email address to validate.
+- Returns: `true` if the email address is valid, `false` otherwise.
+
+#### validateURL(url)
+
+Validate a URL format.
+
+- `url`: The URL to validate.
+- Returns: `true` if the URL is valid, `false` otherwise.
+
+#### validateCreditCard(cardNumber)
+
+Validate a credit card number format.
+
+- `cardNumber`: The credit card number to validate.
+- Returns: `true` if the credit card number is valid, `false` otherwise.
+
+#### validateIPv4(ipv4Address)
+
+Validate an IPv4 address format.
+
+- `ipv4Address`: The IPv4 address to validate.
+- Returns: `true` if the IPv4 address is valid, `false` otherwise.
+
+#### validateIPv6(ipv6Address)
+
+Validate an IPv6 address format.
+
+- `ipv6Address`: The IPv6 address to validate.
+- Returns: `true` if the IPv6 address is valid, `false` otherwise.
+
+#### validateDate(dateString)
+
+Validate a date string format.
+
+- `dateString`: The date string to validate.
+- Returns: `true` if the date string is valid, `false` otherwise. Note: This function supports many common date formats but may not cover all edge cases.
+
 
 
 
