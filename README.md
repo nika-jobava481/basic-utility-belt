@@ -32,8 +32,8 @@ npm install basic-utility-belt
 
 ## Docs
 
-  - [numbers.js](#numbersjs)
-  - [dates.js](#datesjs)
+  - [numbers.js](#numbers)
+  - [dates.js](#dates)
   - [strings](#strings)
   - [arrays](#arrays)
 
@@ -217,12 +217,12 @@ Escape HTML special characters in a string.
 - Returns: The string with HTML special characters escaped.
 
 
-### arrays.js
+### arrays
 
-- [shuffleArray](#shufflearray)
-- [uniqueArray](#uniquearray)
-- [flattenArray](#flattenarray)
-- [chunkArray](#chunkarray-size)
+- [shuffleArray](#shufflearrayarray)
+- [uniqueArray](#uniquearrayarray)
+- [flattenArray](#flattenarrayarray)
+- [chunkArray](#chunkarraysize)
 
 #### shuffleArray(array)
 
