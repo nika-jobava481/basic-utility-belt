@@ -26,14 +26,13 @@ npm install basic-utility-belt
 - Arithmetic operations
 - Date and time manipulation
 - String processing
-- File utilities
 - and more...
 
 
 ## Docs
 
-  - [numbers.js](#numbersjs)
-  - [dates.js](#datesjs)
+  - [numbers](#numbers)
+  - [dates](#dates)
   - [strings](#strings)
   - [arrays](#arrays)
 
@@ -217,12 +216,12 @@ Escape HTML special characters in a string.
 - Returns: The string with HTML special characters escaped.
 
 
-### arrays.js
+### arrays
 
-- [shuffleArray](#shufflearray)
-- [uniqueArray](#uniquearray)
-- [flattenArray](#flattenarray)
-- [chunkArray](#chunkarray-size)
+- [shuffleArray](#shufflearrayarray)
+- [uniqueArray](#uniquearrayarray)
+- [flattenArray](#flattenarrayarray)
+- [chunkArray](#chunkarrayarray-size)
 
 #### shuffleArray(array)
 
