@@ -8,6 +8,7 @@ Basic Utility Belt is a versatile collection of essential utility functions desi
 - [Installation](#installation)
 - [Features](#features)
 - [Docs](#docs)
+  - [General Utilities](#general-utilities)
   - [numbers](#numbers)
   - [dates](#dates)
   - [strings](#strings)
@@ -32,6 +33,7 @@ npm install basic-utility-belt
 
 ## Docs
 
+  - [General Utilities](#general-utilities)
   - [numbers](#numbers)
   - [dates](#dates)
   - [strings](#strings)
