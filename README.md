@@ -76,18 +76,19 @@ Round a number to a specified number of decimal places.
 - `decimalPlaces`: The number of decimal places.
 - Returns: The rounded number.
 
-#### average(numbers)
 
-Calculate the average of an array of numbers.
+### average(...numbers)
 
-- `numbers`: The array of numbers.
-- Returns: The average of the numbers.
+Calculate the average of a variable number of numbers.
 
-#### sum(numbers)
+- `...numbers`: The numbers.
+- Returns: The average of the numbers. Returns NaN if no numbers are provided.
 
-Calculate the sum of an array of numbers.
+### sum(...numbers)
 
-- `numbers`: The array of numbers.
+Calculate the sum of a variable number of numbers.
+
+- `...numbers`: The numbers.
 - Returns: The sum of the numbers.
 
 #### factorial(num)
