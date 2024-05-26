@@ -38,6 +38,37 @@ npm install basic-utility-belt
   - [arrays](#arrays)
   - [regexs](#regexs)
 
+### General Utilities
+
+- [generateUUID](#generateuuid)
+- [parseQueryString](#parsequerystringqueryString)
+- [hexToRgb](#hextorgbhex-opacity)
+
+
+#### generateUUID()
+
+Generate a UUID (Universally Unique Identifier).
+
+- Returns: The generated UUID.
+
+
+#### parseQueryString(queryString)
+
+Parse a URL query string into an object.
+
+- `queryString`: The URL query string to parse.
+- Returns: The parsed object representing the query string.
+
+#### hexToRgb(hex, opacity?)
+
+Convert a HEX color code to RGB.
+
+- `hex`: The HEX color code to convert.
+- `opacity`: The opacity of the color (optional, default is 1).
+- Returns: The RGBA representation of the color.
+
+
+
 ### numbers
 
 - [getRandomNumber](#getrandomnumbermin-max)
