@@ -31,23 +31,34 @@ export function round(num: number, decimalPlaces: number): number {
 }
 
 /**
- * Calculate the average of an array of numbers.
- * @param {number[]} numbers The array of numbers.
- * @returns {number} The average of the numbers.
+ * Calculate the average of a variable number of numbers.
+ * @param {...number} numbers The numbers.
+ * @returns {number} The average of the numbers. Returns NaN if no numbers are provided.
  */
-export function average(numbers: number[]): number {
-    const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+export function average(...numbers:number[]) {
+    if (numbers.length === 0) {
+        return NaN;
+    }
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
     return sum / numbers.length;
 }
 
 /**
- * Calculate the sum of an array of numbers.
- * @param {number[]} numbers The array of numbers.
+ * Calculate the sum of a variable number of numbers.
+ * @param {...number} numbers The numbers.
  * @returns {number} The sum of the numbers.
  */
-export function sum(numbers: number[]): number {
-    return numbers.reduce((acc, curr) => acc + curr, 0);
+export function sum(...numbers:number[]) {
+    let total = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        total += numbers[i];
+    }
+    return total;
 }
+
 
 /**
  * Calculate the factorial of a non-negative integer.
