@@ -162,3 +162,51 @@ export function lcmTwoNumbers(a: number, b: number): number {
     return (a * b) / gcdTwoNumbers(a, b);
 }
 
+/**
+ * Convert a number to a Roman numeral.
+ * @param {number} num The number to convert.
+ * @returns {string} The Roman numeral representation of the number.
+ */
+export function numberToRoman(num: number): string {
+    const val = [
+        1000, 900, 500, 400, 100, 90, 
+        50, 40, 10, 9, 5, 4, 1
+    ];
+    const syb = [
+        "M", "CM", "D", "CD", "C", "XC",
+        "L", "XL", "X", "IX", "V", "IV", "I"
+    ];
+    let roman = '';
+    for (let i = 0; i < val.length; i++) {
+        while (num >= val[i]) {
+            num -= val[i];
+            roman += syb[i];
+        }
+    }
+    return roman;
+}
+
+/**
+ * Convert a Roman numeral to a number.
+ * @param {string} roman The Roman numeral to convert.
+ * @returns {number} The numerical representation of the Roman numeral.
+ */
+export function romanToNumber(roman: string): number {
+    const romanToInt: { [key: string]: number } = {
+        'I': 1, 'V': 5, 'X': 10, 'L': 50,
+        'C': 100, 'D': 500, 'M': 1000
+    };
+    let num = 0;
+    for (let i = 0; i < roman.length; i++) {
+        const current = romanToInt[roman[i]];
+        const next = romanToInt[roman[i + 1]];
+        if (next > current) {
+            num += next - current;
+            i++;
+        } else {
+            num += current;
+        }
+    }
+    return num;
+}
+

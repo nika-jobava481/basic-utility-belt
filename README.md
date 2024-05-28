@@ -83,6 +83,8 @@ Convert a HEX color code to RGB.
 - [isPrime](#isprimenum)
 - [gcd](#gcda-b)
 - [lcm](#lcma-b)
+- [numberToRoman](#numberToRomannum)
+- [romanToNumber](#romanToNumberroman)
 
 #### getRandomNumber(min, max)
 
@@ -158,6 +160,25 @@ Calculate the least common multiple of multiple numbers.
 
 - `...numbers`: Numbers for which to calculate the least common multiple.
 - Returns: The least common multiple.
+
+# Roman Numeral Conversion Library
+
+Convert between numbers and Roman numerals.
+
+#### numberToRoman(num)
+
+Convert a number to a Roman numeral.
+
+- `num`: The number to convert.
+- Returns: The Roman numeral representation of the number.
+
+#### romanToNumber(roman)
+
+Convert a Roman numeral to a number.
+
+- `roman`: The Roman numeral to convert.
+- Returns: The numerical representation of the Roman numeral.
+
 
 
 
