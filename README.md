@@ -241,8 +241,23 @@ Check if a year is a leap year.
 
 - [capitalize](#capitalizestr)
 - [camelCase](#camelcasestr)
+- [toSnakeCase](#toSnakeCasestr)
+- [toKebabCase](#toKebabCasestr)
+- [toPascalCase](#toPascalCasestr)
+- [capitalizeWords](#capitalizeWordsstr)
 - [reverseString](#reversestringstr)
 - [escapeHTML](#escapehtmlstr)
+- [escapeRegExp](#escapeRegExpstr)
+- [truncateString](#truncateStringstr-length)
+- [repeatString](#repeatStringstr-count)
+- [startsWith](#startsWithstr-searchString)
+- [endsWith](#endsWithstr-searchString)
+- [includesSubstring](#includesSubstringstr-searchString)
+- [countOccurrences](#countOccurrencesstr-subString)
+- [trimWhitespace](#trimWhitespacestr)
+- [padString](#padStringstr-length-char)
+- [removeNonAscii](#removeNonAsciistr)
+- [reverseWords](#reverseWordsstr)
 
 #### capitalize(str)
 
@@ -258,6 +273,36 @@ Convert a string to camel case.
 - `str`: The input string.
 - Returns: The string in camel case.
 
+#### toSnakeCase(str)
+
+Convert a string to snake_case.
+
+- `str`: The string to convert.
+- Returns: The string converted to snake_case.
+
+#### toKebabCase(str)
+
+Convert a string to kebab-case.
+
+- `str`: The string to convert.
+- Returns: The string converted to kebab-case.
+
+#### toPascalCase(str)
+
+Convert a string to PascalCase.
+
+- `str`: The string to convert.
+- Returns: The string converted to PascalCase.
+
+#### capitalizeWords(str)
+
+Capitalize the first letter of each word in a string.
+
+- `str`: The string to capitalize.
+- Returns: The string with the first letter of each word capitalized.
+
+
+
 #### reverseString(str)
 
 Reverse a given string.
@@ -271,6 +316,98 @@ Escape HTML special characters in a string.
 
 - `str`: The input string.
 - Returns: The string with HTML special characters escaped.
+
+
+#### escapeRegExp(str)
+
+Escape special characters in a string for use in a regular expression.
+
+- `str`: The string to escape.
+- Returns: The string with special characters escaped.
+
+
+
+#### truncateString(str, length)
+
+Truncate a string to a specified length and add ellipsis if necessary.
+
+- `str`: The string to truncate.
+- `length`: The maximum length of the truncated string including the ellipsis.
+- Returns: The truncated string with ellipsis if it was truncated.
+
+
+#### repeatString(str, count)
+
+Repeat a string a specified number of times.
+
+- `str`: The string to repeat.
+- `count`: The number of times to repeat the string. Default is 10.
+- Returns: The repeated string.
+
+
+#### startsWith(str, searchString)
+
+Check if a string starts with a given substring.
+
+- `str`: The string to check.
+- `searchString`: The substring to search for at the beginning of the string.
+- Returns: True if the string starts with the given substring, otherwise false.
+
+#### endsWith(str, searchString)
+
+Check if a string ends with a given substring.
+
+- `str`: The string to check.
+- `searchString`: The substring to search for at the end of the string.
+- Returns: True if the string ends with the given substring, otherwise false.
+
+#### includesSubstring(str, searchString)
+
+Check if a string includes a given substring.
+
+- `str`: The string to check.
+- `searchString`: The substring to search for within the string.
+- Returns: True if the string includes the given substring, otherwise false.
+
+#### countOccurrences(str, subString)
+
+Count the occurrences of a substring in a string.
+
+- `str`: The string to search in.
+- `subString`: The substring to count occurrences of.
+- Returns: The number of occurrences of the substring in the string.
+
+
+#### trimWhitespace(str)
+
+Remove leading and trailing whitespace from a string.
+
+- `str`: The string to trim.
+- Returns: The string with leading and trailing whitespace removed.
+
+#### padString(str, length, char)
+
+Pad a string with a specified character to a given length.
+
+- `str`: The string to pad.
+- `length`: The desired length of the padded string.
+- `char`: The character to use for padding. Default is space.
+- Returns: The padded string.
+
+#### removeNonAscii(str)
+
+Remove non-ASCII characters from a string.
+
+- `str`: The string to remove non-ASCII characters from.
+- Returns: The string with non-ASCII characters removed.
+
+#### reverseWords(str)
+
+Reverse the words in a string.
+
+- `str`: The string whose words to reverse.
+- Returns: The string with the words reversed.
+
 
 
 ### arrays
