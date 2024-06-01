@@ -44,6 +44,7 @@ npm install basic-utility-belt
 
 - [generateUUID](#generateuuid)
 - [parseQueryString](#parsequerystringqueryString)
+- [deepEqual](#deepEqualvalue1-value2)
 - [hexToRgb](#hextorgbhex-opacity)
 
 
@@ -61,6 +62,14 @@ Parse a URL query string into an object.
 - `queryString`: The URL query string to parse.
 - Returns: The parsed object representing the query string.
 
+#### deepEqual(value1, value2)
+
+Perform a deep comparison between two values to determine if they are equivalent.
+
+- `value1`: The first value to compare.
+- `value2`: The second value to compare.
+- Returns: `true` if the values are equivalent, `false` otherwise.
+
 #### hexToRgb(hex, opacity?)
 
 Convert a HEX color code to RGB.
@@ -68,6 +77,8 @@ Convert a HEX color code to RGB.
 - `hex`: The HEX color code to convert.
 - `opacity`: The opacity of the color (optional, default is 1).
 - Returns: The RGBA representation of the color.
+
+
 
 
 
@@ -184,12 +195,59 @@ Convert a Roman numeral to a number.
 
 ### dates
 
+- [getDayOfYear](#getDayOfYeardate)
+- [getweekOfYear](#getWeekOfYeardate)
+- [parseDate](#parseDatedateString)
+- [formatDate](#formatDatedate)
 - [getCalendarDays](#getcalendardaysstartdate-enddate)
 - [getWorkingDays](#getworkingdaysstartdate-enddate)
 - [addDays](#adddaysdate-days)
 - [subtractDays](#subtractdaysdate-days)
+- [addMonths](#addMonthsdate-months)
+- [subtractMonths](#subtractMonthsdate-months)
+- [addYears](#addYearsdate-years)
+- [subtractYears](#subtractYearsdate-years)
 - [getDayOfWeek](#getdayofweekdate)
+- [isWeekend](#isWeekenddate)
+- [isWeekday](#isWeekdaydate)
 - [isLeapYear](#isleapyearyear)
+
+#### getDayOfYear(date)
+
+Get the day of the year from a date.
+
+- `date`: The date object from which to get the day of the year.
+- Returns: The day of the year (1-365 or 1-366 for leap years).
+
+
+#### getWeekOfYear(date)
+
+Get the week of the year from a date.
+
+- `date`: The date object from which to get the week of the year.
+- Returns: The week of the year (1-52 or 1-53 depending on the year's configuration).
+
+
+
+
+#### parseDate(dateString)
+
+Parse a date string into a JavaScript Date object.
+
+- `dateString`: The date string to parse.
+- Returns: A Date object representing the parsed date, or null if parsing fails.
+
+**Note:** Dates are returned in UTC time.
+
+#### formatDate(date)
+
+Format a date object into a string.
+
+- `date`: The date object to format.
+- Returns: The formatted date string.
+
+**Note:** Dates are formatted in UTC time.
+
 
 #### getCalendarDays(startDate, endDate)
 
@@ -223,12 +281,64 @@ Subtract a specified number of days from a date.
 - `days`: The number of days to subtract.
 - Returns: The new date after subtracting days.
 
+#### addMonths(date, months)
+
+Add a specified number of months to a date.
+
+- `date`: The date object to which to add months.
+- `months`: The number of months to add. Positive values add months in the future, negative values subtract months.
+- Returns: A new Date object with the specified number of months added.
+
+#### subtractMonths(date, months)
+
+Subtract a specified number of months from a date.
+
+- `date`: The date object from which to subtract months.
+- `months`: The number of months to subtract. Positive values subtract months, negative values add months.
+- Returns: A new Date object with the specified number of months subtracted.
+
+#### addYears(date, years)
+
+Add a specified number of years to a date.
+
+- `date`: The date object to which to add years.
+- `years`: The number of years to add. Positive values add years in the future, negative values subtract years.
+- Returns: A new Date object with the specified number of years added.
+
+
+#### subtractYears(date, years)
+
+Subtract a specified number of years from a date.
+
+- `date`: The date object from which to subtract years.
+- `years`: The number of years to subtract. Positive values subtract years, negative values add years.
+- Returns: A new Date object with the specified number of years subtracted.
+
+
+
+
 #### getDayOfWeek(date)
 
 Get the day of the week from a date.
 
 - `date`: The date to get the day of the week from.
 - Returns: The day of the week as a string.
+
+#### isWeekend(date)
+
+Check if a date falls on a weekend (Saturday or Sunday).
+
+- `date`: The date object to check.
+- Returns: A boolean value indicating whether the date falls on a weekend.
+
+#### isWeekday(date)
+
+Check if a date falls on a weekday (Monday to Friday).
+
+- `date`: The date object to check.
+- Returns: A boolean value indicating whether the date falls on a weekday.
+
+
 
 #### isLeapYear(year)
 
