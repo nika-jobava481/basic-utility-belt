@@ -522,10 +522,96 @@ Reverse the words in a string.
 
 ### arrays
 
+- [arrayMedian](#arrayMedianarray)
+- [findMin](#findMinarray)
+- [findMax](#findMaxarray)
+- [removeDuplicates](#removeDuplicatesarray)
+- [removeFalsyValues](#removeFalsyValuesarray)
+- [arraySymmetricDifference](#arraySymmetricDifferencearray1-array2)
+- [arrayUnion](#arrayUnionarray1-array2)
+- [arrayIntersection](#arrayIntersectionarray1-array2)
+- [arrayDifference](#arrayDifferencearray1-array2)
 - [shuffleArray](#shufflearrayarray)
 - [uniqueArray](#uniquearrayarray)
 - [flattenArray](#flattenarrayarray)
 - [chunkArray](#chunkarrayarray-size)
+
+#### arrayMedian(array)
+
+Calculate the median of an array of numbers.
+
+- `array`: The array of numbers.
+- Returns: The median value.
+
+
+#### findMin(array)
+
+Find the minimum value in an array.
+
+- `array`: The array in which to find the minimum value.
+- Returns: The minimum value in the array.
+
+
+#### findMax(array)
+
+Find the maximum value in an array.
+
+- `array`: The array in which to find the maximum value.
+- Returns: The maximum value in the array.
+
+
+#### removeDuplicates(array)
+
+Remove duplicate elements from an array, leaving only non-duplicated values.
+
+- `array`: The array from which to remove duplicates.
+- Returns: An array with only non-duplicated values.
+
+
+#### removeFalsyValues(array)
+
+Remove all falsy values from an array.
+
+- `array`: The array from which to remove falsy values.
+- Returns: An array with all falsy values removed.
+
+
+#### arraySymmetricDifference(array1, array2)
+
+Get the symmetric difference of two arrays.
+
+- `array1`: The first array.
+- `array2`: The second array.
+- Returns: An array containing the elements that are present in either of the two arrays but not in both.
+
+
+#### arrayUnion(array1, array2)
+
+Get the union of two arrays.
+
+- `array1`: The first array.
+- `array2`: The second array.
+- Returns: An array containing all unique elements that are present in either array.
+
+
+#### arrayIntersection(array1, array2)
+
+Get the intersection of two arrays.
+
+- `array1`: The first array.
+- `array2`: The second array.
+- Returns: An array containing the elements that are present in both arrays.
+
+
+
+#### arrayDifference(array1, array2)
+
+Get the difference between two arrays.
+
+- `array1`: The first array.
+- `array2`: The second array.
+- Returns: An array containing the elements that are present in the first array but not in the second array.
+
 
 #### shuffleArray(array)
 
