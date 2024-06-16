@@ -1,6 +1,6 @@
 {
   "name": "basic-utility-belt",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Basic Utility Belt is a versatile collection of essential utility functions designed to simplify a wide range of common programming tasks. Whether you need to manipulate dates, perform arithmetic operations, or process strings, this toolkit has you covered. Enhance your development workflow with these reliable and easy-to-use functions, all in one convenient package.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

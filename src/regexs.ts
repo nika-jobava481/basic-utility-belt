@@ -1,11 +1,11 @@
 /**
- * Validate an email address format.
+ * Validate if a given string is a valid email address.
  * @param {string} email The email address to validate.
- * @returns {boolean} True if the email address format is valid, false otherwise.
+ * @returns {boolean} True if the email is valid, false otherwise.
  */
 export function validateEmail(email: string): boolean {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return regex.test(email);
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
 }
 
 /**

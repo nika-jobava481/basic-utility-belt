@@ -12,6 +12,7 @@ Basic Utility Belt is a versatile collection of essential utility functions desi
   - [numbers](#numbers)
   - [dates](#dates)
   - [strings](#strings)
+  - [objects](#objects)
   - [arrays](#arrays)
   - [regexs](#regexs)
 - [License](#license)
@@ -43,8 +44,8 @@ npm install basic-utility-belt
 ### General Utilities
 
 - [generateUUID](#generateuuid)
+- [objectToQueryString](#objectToQueryStringobj)
 - [parseQueryString](#parsequerystringqueryString)
-- [deepEqual](#deepEqualvalue1-value2)
 - [hexToRgb](#hextorgbhex-opacity)
 
 
@@ -54,6 +55,14 @@ Generate a UUID (Universally Unique Identifier).
 
 - Returns: The generated UUID.
 
+#### objectToQueryString(obj)
+
+Convert an object to a URL query string.
+
+- `obj`: The object to convert.
+- Returns: The URL query string.
+
+
 
 #### parseQueryString(queryString)
 
@@ -62,13 +71,6 @@ Parse a URL query string into an object.
 - `queryString`: The URL query string to parse.
 - Returns: The parsed object representing the query string.
 
-#### deepEqual(value1, value2)
-
-Perform a deep comparison between two values to determine if they are equivalent.
-
-- `value1`: The first value to compare.
-- `value2`: The second value to compare.
-- Returns: `true` if the values are equivalent, `false` otherwise.
 
 #### hexToRgb(hex, opacity?)
 
@@ -517,6 +519,37 @@ Reverse the words in a string.
 
 - `str`: The string whose words to reverse.
 - Returns: The string with the words reversed.
+
+
+
+### objects
+- [deepEqual](#deepEqualvalue1-value2)
+- [deepClone](#deepCloneobj)
+- [mergeObjects](#mergeObjectsobjects)
+
+
+#### deepEqual(value1, value2)
+
+Perform a deep comparison between two values to determine if they are equivalent.
+
+- `value1`: The first value to compare.
+- `value2`: The second value to compare.
+- Returns: `true` if the values are equivalent, `false` otherwise.
+
+#### mergeObjects(...objects)
+
+Merge multiple objects into one.
+
+- `...objects`: The objects to merge.
+- Returns: The merged object.
+
+
+#### deepClone(obj)
+
+Deeply clone an object.
+
+- `obj`: The object to clone.
+- Returns: A deep clone of the original object.
 
 
 
