@@ -1,3 +1,51 @@
+
+// /**
+//  * Sort an array of objects by a specified property.
+//  * @param {Array<object>} array - The array of objects to sort.
+//  * @param {string} property - The property to sort by.
+//  * @returns {Array<object>} The sorted array.
+//  */
+// export function sortByProperty<T extends object>(array: T[], property: keyof T): T[] {
+//     return array.sort((a, b) => {
+//         if (a[property] > b[property]) {
+//             return 1;
+//         } else if (a[property] < b[property]) {
+//             return -1;
+//         } else {
+//             return 0;
+//         }
+//     });
+// }
+
+
+/**
+ * Sort an array of objects by a specified (possibly nested) property.
+ * @param {Array<object>} array - The array of objects to sort.
+ * @param {string} propertyPath - The property path to sort by, using dot notation for nested properties.
+ * @returns {Array<object>} The sorted array.
+ */
+export function sortByProperty<T extends Record<string, any>>(array: T[], propertyPath: string): T[] {
+    return array.sort((a, b) => {
+        const aValue = propertyPath.split('.').reduce((obj, key) => obj[key], a);
+        const bValue = propertyPath.split('.').reduce((obj, key) => obj[key], b);
+
+        if (aValue > bValue) {
+            return 1;
+        } else if (aValue < bValue) {
+            return -1;
+        } else {
+            return 0;
+        }
+    });
+}
+
+
+
+
+
+
+
+
 /**
  * Calculate the median of an array of numbers.
  * @param {number[]} array The array of numbers.

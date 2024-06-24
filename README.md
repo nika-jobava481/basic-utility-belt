@@ -555,6 +555,7 @@ Deeply clone an object.
 
 ### arrays
 
+- [sortByProperty](#sortByPropertyarray-propertyPath)
 - [arrayMedian](#arrayMedianarray)
 - [findMin](#findMinarray)
 - [findMax](#findMaxarray)
@@ -568,6 +569,15 @@ Deeply clone an object.
 - [uniqueArray](#uniquearrayarray)
 - [flattenArray](#flattenarrayarray)
 - [chunkArray](#chunkarrayarray-size)
+
+#### sortByProperty(array, propertyPath)
+
+Sort an array of objects by a specified (possibly nested) property.
+
+- `array`: The array of objects to sort.
+- `propertyPath`: The property path to sort by, using dot notation for nested properties.
+- Returns: The sorted array.
+
 
 #### arrayMedian(array)
 
