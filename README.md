@@ -86,7 +86,17 @@ Convert a HEX color code to RGB.
 
 ### numbers
 
-- [getRandomNumber](#getrandomnumbermin-max)
+- [modulus](#modulusa-b)
+- [radiansToDegrees](#radiansToDegreesradians)
+- [degreesToRadians](#degreesToRadiansdegrees)
+- [randomInt](#randomIntmin-max)
+- [randomFloat](#randomFloatmin-max)
+- [toPrecision](#toPrecisionnum-precision)
+- [toFixed](#toFixednum-digits)
+- [isInteger](#isIntegernum)
+- [isFloat](#isFloatnum)
+- [isEven](#isEvennum)
+- [isOdd](#isOddnum)
 - [clamp](#clampnum-min-max)
 - [round](#roundnum-decimalplaces)
 - [average](#averagenumbers)
@@ -94,18 +104,113 @@ Convert a HEX color code to RGB.
 - [factorial](#factorialnum)
 - [fibonacci](#fibonaccinumterms)
 - [isPrime](#isprimenum)
-- [gcd](#gcda-b)
-- [lcm](#lcma-b)
+- [gcd](#gcdnumbers)
+- [lcm](#lcmnumbers)
 - [numberToRoman](#numberToRomannum)
 - [romanToNumber](#romanToNumberroman)
 
-#### getRandomNumber(min, max)
 
-Generate a random number within a specified range.
 
-- `min`: The minimum value.
-- `max`: The maximum value.
-- Returns: A random number between min and max (inclusive).
+#### modulus(a, b)
+
+Calculate the modulus of two numbers.
+
+- `a`: The dividend.
+- `b`: The divisor.
+- Returns: The modulus of `a` divided by `b`.
+
+
+
+#### radiansToDegrees(radians)
+
+Convert radians to degrees.
+
+- `radians`: The angle in radians to convert.
+- Returns: The angle converted to degrees.
+
+
+
+#### degreesToRadians(degrees)
+
+Convert degrees to radians.
+
+- `degrees`: The angle in degrees to convert.
+- Returns: The angle converted to radians.
+
+
+
+#### randomInt(min, max)
+
+Generate a random integer within a specified range.
+
+- `min`: The minimum value of the range (inclusive).
+- `max`: The maximum value of the range (inclusive).
+- Returns: The generated random integer.
+
+
+
+#### randomFloat(min, max)
+
+Generate a random float within a specified range.
+
+- `min`: The minimum value of the range (inclusive).
+- `max`: The maximum value of the range (exclusive).
+- Returns: The generated random float.
+
+
+
+#### toPrecision(num, precision)
+
+Format a number to a specified precision.
+
+- `num`: The number to format.
+- `precision`: The number of significant digits.
+- Returns: The formatted number as a string.
+
+
+
+#### toFixed(num, digits)
+
+Format a number using fixed-point notation.
+
+- `num`: The number to format.
+- `digits`: The number of digits to appear after the decimal point.
+- Returns: The formatted number as a string.
+
+
+
+#### isInteger(num)
+
+Check if a number is an integer.
+
+- `num`: The number to check.
+- Returns: True if the number is an integer, false otherwise.
+
+
+#### isFloat(num)
+
+Check if a number is a float.
+
+- `num`: The number to check.
+- Returns: True if the number is a float, false otherwise.
+
+
+
+#### isEven(num)
+
+Check if a number is even.
+
+- `num`: The number to check.
+- Returns: True if the number is even, false otherwise.
+
+
+#### isOdd(num)
+
+Check if a number is odd.
+
+- `num`: The number to check.
+- Returns: True if the number is odd, false otherwise.
+
 
 #### clamp(num, min, max)
 

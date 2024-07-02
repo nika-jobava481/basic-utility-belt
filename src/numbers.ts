@@ -1,12 +1,137 @@
+
+
+
+
+
+
+
+
+
+
+
+
 /**
- * Generate a random number within a specified range.
- * @param {number} min The minimum value.
- * @param {number} max The maximum value.
- * @returns {number} A random number between min and max (inclusive).
+ * Calculate the modulus of two numbers.
+ * @param {number} a - The dividend.
+ * @param {number} b - The divisor.
+ * @returns {number} The modulus of `a` divided by `b`.
  */
-export function getRandomNumber(min: number, max: number): number {
+export function modulus(a: number, b: number): number {
+    return a % b;
+}
+
+
+
+/**
+ * Convert radians to degrees.
+ * @param {number} radians - The angle in radians to convert.
+ * @returns {number} The angle converted to degrees.
+ */
+export function radiansToDegrees(radians: number): number {
+    return radians * (180 / Math.PI);
+}
+
+
+
+/**
+ * Convert degrees to radians.
+ * @param {number} degrees - The angle in degrees to convert.
+ * @returns {number} The angle converted to radians.
+ */
+export function degreesToRadians(degrees: number): number {
+    return degrees * (Math.PI / 180);
+}
+
+
+
+/**
+ * Generate a random integer within a specified range.
+ * @param {number} min - The minimum value of the range (inclusive).
+ * @param {number} max - The maximum value of the range (inclusive).
+ * @returns {number} The generated random integer.
+ */
+export function randomInt(min: number, max: number): number {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+
+/**
+ * Generate a random float within a specified range.
+ * @param {number} min - The minimum value of the range (inclusive).
+ * @param {number} max - The maximum value of the range (exclusive).
+ * @returns {number} The generated random float.
+ */
+export function randomFloat(min: number, max: number): number {
     return Math.random() * (max - min) + min;
 }
+
+
+/**
+ * Format a number to a specified precision.
+ * @param {number} num - The number to format.
+ * @param {number} precision - The number of significant digits.
+ * @returns {string} The formatted number as a string.
+ */
+export function toPrecision(num: number, precision: number): string {
+    return num.toPrecision(precision);
+}
+
+
+
+/**
+ * Format a number using fixed-point notation.
+ * @param {number} num - The number to format.
+ * @param {number} digits - The number of digits to appear after the decimal point.
+ * @returns {string} The formatted number as a string.
+ */
+export function toFixed(num: number, digits: number): string {
+    return num.toFixed(digits);
+}
+
+
+
+/**
+ * Check if a number is a float.
+ * @param {number} num - The number to check.
+ * @returns {boolean} True if the number is a float, false otherwise.
+ */
+export function isFloat(num: number): boolean {
+    return Number(num) === num && !Number.isInteger(num);
+}
+
+
+
+/**
+ * Check if a number is an integer.
+ * @param {number} num - The number to check.
+ * @returns {boolean} True if the number is an integer, false otherwise.
+ */
+export function isInteger(num: number): boolean {
+    return Number.isInteger(num);
+}
+
+
+/**
+ * Check if a number is even.
+ * @param {number} num - The number to check.
+ * @returns {boolean} True if the number is even, false otherwise.
+ */
+export function isEven(num: number): boolean {
+    return num % 2 === 0;
+}
+
+/**
+ * Check if a number is odd.
+ * @param {number} num - The number to check.
+ * @returns {boolean} True if the number is odd, false otherwise.
+ */
+export function isOdd(num: number): boolean {
+    return num % 2 !== 0;
+}
+
 
 /**
  * Clamp a number within a specified range.

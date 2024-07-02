@@ -1,27 +1,3 @@
-// /**
-//  * Deeply freeze an object to make it immutable.
-//  * @param {object} obj - The object to deeply freeze.
-//  * @returns {object} The deeply frozen object.
-//  */
-// export function deepFreeze<T extends object>(obj: T): T {
-//     // Retrieve the property names defined on obj
-//     const propNames = Object.getOwnPropertyNames(obj);
-
-//     // Freeze properties before freezing self
-//     for (const name of propNames) {
-//         const value = (obj as any)[name];
-
-//         if (value && typeof value === 'object') {
-//             deepFreeze(value);
-//         }
-//     }
-
-//     return Object.freeze(obj);
-// }
-
-
-
-
 
 
 /**
