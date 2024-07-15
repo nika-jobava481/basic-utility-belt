@@ -279,9 +279,6 @@ Calculate the least common multiple of multiple numbers.
 - `...numbers`: Numbers for which to calculate the least common multiple.
 - Returns: The least common multiple.
 
-# Roman Numeral Conversion Library
-
-Convert between numbers and Roman numerals.
 
 #### numberToRoman(num)
 
