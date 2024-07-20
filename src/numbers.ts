@@ -7,6 +7,14 @@
 
 
 
+/**
+ * Calculate the product of an array of numbers.
+ * @param {number[]} array - The array of numbers.
+ * @returns {number} The product of the numbers in the array.
+ */
+export function productArray(array: number[]): number {
+    return array.reduce((product, num) => product * num, 1);
+}
 
 
 

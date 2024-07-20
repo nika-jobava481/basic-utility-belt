@@ -8,6 +8,17 @@ export function capitalize(str: string): string {
 }
 
 /**
+ * Decapitalize the first letter of a string.
+ * @param {string} str - The string to decapitalize.
+ * @returns {string} The string with the first letter decapitalized.
+ */
+export function decapitalize(str: string): string {
+    if (!str) return str;
+    return str.charAt(0).toLowerCase() + str.slice(1);
+}
+
+
+/**
  * Convert a string to camel case.
  * @param {string} str The input string.
  * @returns {string} The string in camel case.

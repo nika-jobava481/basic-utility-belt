@@ -15,6 +15,7 @@ Basic Utility Belt is a versatile collection of essential utility functions desi
   - [objects](#objects)
   - [arrays](#arrays)
   - [regexs](#regexs)
+  - [functions](#functions)
 - [License](#license)
 
 ## Installation
@@ -38,8 +39,10 @@ npm install basic-utility-belt
   - [numbers](#numbers)
   - [dates](#dates)
   - [strings](#strings)
+  - [objects](#objects)
   - [arrays](#arrays)
   - [regexs](#regexs)
+  - [functions](#functions)
 
 ### General Utilities
 
@@ -86,6 +89,8 @@ Convert a HEX color code to RGB.
 
 ### numbers
 
+
+- [productArray](#productArrayarray)
 - [modulus](#modulusa-b)
 - [radiansToDegrees](#radiansToDegreesradians)
 - [degreesToRadians](#degreesToRadiansdegrees)
@@ -109,6 +114,13 @@ Convert a HEX color code to RGB.
 - [numberToRoman](#numberToRomannum)
 - [romanToNumber](#romanToNumberroman)
 
+
+#### productArray(array)
+
+Calculate the product of an array of numbers.
+
+- `array`: The array of numbers.
+- Returns: The product of the numbers in the array.
 
 
 #### modulus(a, b)
@@ -278,10 +290,6 @@ Calculate the least common multiple of multiple numbers.
 
 - `...numbers`: Numbers for which to calculate the least common multiple.
 - Returns: The least common multiple.
-
-# Roman Numeral Conversion Library
-
-Convert between numbers and Roman numerals.
 
 #### numberToRoman(num)
 
@@ -457,6 +465,7 @@ Check if a year is a leap year.
 ### strings
 
 - [capitalize](#capitalizestr)
+- [decapitalize](#decapitalizestr)
 - [camelCase](#camelcasestr)
 - [toSnakeCase](#toSnakeCasestr)
 - [toKebabCase](#toKebabCasestr)
@@ -482,6 +491,14 @@ Capitalize the first letter of a string.
 
 - `str`: The input string.
 - Returns: The string with the first letter capitalized.
+
+#### decapitalize(str)
+
+Decapitalize the first letter of a string.
+
+- `str`: The string to decapitalize.
+- Returns: The string with the first letter decapitalized.
+
 
 #### camelCase(str)
 
@@ -631,6 +648,26 @@ Reverse the words in a string.
 - [deepEqual](#deepEqualvalue1-value2)
 - [deepClone](#deepCloneobj)
 - [mergeObjects](#mergeObjectsobjects)
+- [objectToPairs](#objectToPairsobj)
+- [pairsToObject](#pairsToObjectpairs)
+
+
+
+#### objectToPairs(obj)
+
+Convert an object to an array of key-value pairs.
+
+- `obj`: The object to convert.
+- Returns: An array of key-value pairs.
+
+
+#### pairsToObject(pairs)
+
+Convert an array of key-value pairs to an object.
+
+- `pairs`: The array of key-value pairs to convert.
+- Returns: The resulting object.
+
 
 
 #### deepEqual(value1, value2)
@@ -844,6 +881,19 @@ Validate a date string format.
 - `dateString`: The date string to validate.
 - Returns: `true` if the date string is valid, `false` otherwise. Note: This function supports many common date formats but may not cover all edge cases.
 
+
+### functions
+
+- [debounce](#debouncefunc-wait)
+
+
+#### debounce(func, wait)
+
+Create a debounced function that delays invoking a function until after a specified wait time.
+
+- `func`: The function to debounce.
+- `wait`: The number of milliseconds to delay.
+- Returns: The debounced function.
 
 
 

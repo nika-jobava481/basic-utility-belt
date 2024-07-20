@@ -1,6 +1,25 @@
 
 
 /**
+ * Convert an object to an array of key-value pairs.
+ * @param {Object} obj - The object to convert.
+ * @returns {[string, any][]} An array of key-value pairs.
+ */
+export function objectToPairs(obj: { [key: string]: any }): [string, any][] {
+    return Object.entries(obj);
+}
+
+/**
+ * Convert an array of key-value pairs to an object.
+ * @param {[string, any][]} pairs - The array of key-value pairs to convert.
+ * @returns {Object} The resulting object.
+ */
+export function pairsToObject(pairs: [string, any][]): { [key: string]: any } {
+    return Object.fromEntries(pairs);
+}
+
+
+/**
  * Perform a deep comparison between two values to determine if they are equivalent.
  * @param {any} value1 The first value to compare.
  * @param {any} value2 The second value to compare.
