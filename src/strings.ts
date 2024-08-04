@@ -1,3 +1,69 @@
+
+/**
+ * Counts the number of consonants in a string.
+ * @param {string} str - The string to check.
+ * @returns {number} The number of consonants in the string.
+ */
+export function countConsonants(str: string): number {
+    const matches = str.match(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/g);
+    return matches ? matches.length : 0;
+}
+
+
+
+
+/**
+ * Counts the number of vowels in a string.
+ * @param {string} str - The string to check.
+ * @returns {number} The number of vowels in the string.
+ */
+export function countVowels(str: string): number {
+    const matches = str.match(/[aeiouAEIOU]/g);
+    return matches ? matches.length : 0;
+}
+
+
+
+/**
+ * Replaces all occurrences of a substring in a string with a new substring.
+ * @param {string} str - The original string.
+ * @param {string} search - The substring to search for.
+ * @param {string} replace - The substring to replace with.
+ * @returns {string} The modified string with all occurrences replaced.
+ */
+export function replaceAll(str: string, search: string, replace: string): string {
+    return str.split(search).join(replace);
+}
+
+
+
+/**
+ * Checks if a string is a palindrome.
+ * @param {string} str - The string to check.
+ * @returns {boolean} True if the string is a palindrome, false otherwise.
+ */
+export function isPalindrome(str: string): boolean {
+    const normalizedStr = str.replace(/[^a-z0-9]/gi, '').toLowerCase();
+    const reversedStr = normalizedStr.split('').reverse().join('');
+    return normalizedStr === reversedStr;
+}
+
+
+
+/**
+ * Checks if two strings are anagrams.
+ * @param {string} str1 - The first string.
+ * @param {string} str2 - The second string.
+ * @returns {boolean} True if the strings are anagrams, false otherwise.
+ */
+export function isAnagram(str1: string, str2: string): boolean {
+    const normalize = (str: string): string => 
+        str.replace(/[^a-z0-9]/gi, '').toLowerCase().split('').sort().join('');
+    return normalize(str1) === normalize(str2);
+}
+
+
+
 /**
  * Capitalize the first letter of a string.
  * @param {string} str The input string.

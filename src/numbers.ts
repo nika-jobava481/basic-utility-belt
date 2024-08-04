@@ -1,12 +1,5 @@
 
 
-
-
-
-
-
-
-
 /**
  * Calculate the product of an array of numbers.
  * @param {number[]} array - The array of numbers.

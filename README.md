@@ -464,6 +464,11 @@ Check if a year is a leap year.
 
 ### strings
 
+- [countConsonants](#countConsonantsstr)
+- [countVowels](#countVowelsstr)
+- [replaceAll](#replaceAllstr-search-replace)
+- [isPalindrome](#isPalindromestr)
+- [isAnagram](#isAnagramstr1-str2)
 - [capitalize](#capitalizestr)
 - [decapitalize](#decapitalizestr)
 - [camelCase](#camelcasestr)
@@ -484,6 +489,51 @@ Check if a year is a leap year.
 - [padString](#padStringstr-length-char)
 - [removeNonAscii](#removeNonAsciistr)
 - [reverseWords](#reverseWordsstr)
+
+#### countConsonants(str)
+
+Counts the number of consonants in a string.
+
+- `str`: The string to check.
+- Returns: The number of consonants in the string.
+
+
+
+#### countVowels(str)
+
+Counts the number of vowels in a string.
+
+- `str`: The string to check.
+- Returns: The number of vowels in the string.
+
+
+
+#### replaceAll(str, search, replace)
+
+Replaces all occurrences of a substring in a string with a new substring.
+
+- `str`: The original string.
+- `search`: The substring to search for.
+- `replace`: The substring to replace with.
+- Returns: The modified string with all occurrences replaced.
+
+
+#### isPalindrome(str)
+
+Checks if a string is a palindrome.
+
+- `str`: The string to check.
+- Returns: True if the string is a palindrome, false otherwise.
+
+
+#### isAnagram(str1, str2)
+
+Checks if two strings are anagrams.
+
+- `str1`: The first string.
+- `str2`: The second string.
+- Returns: True if the strings are anagrams, false otherwise.
+
 
 #### capitalize(str)
 
